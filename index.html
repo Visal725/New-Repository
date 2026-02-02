@@ -1,0 +1,70 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>MyWebsite</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#order">Order</a>
+    <a href="#news">News</a>
+    <a href="#events">Events</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Welcome to Our Website</h1>
+  <p>We provide quality services and latest updates</p>
+  <button onclick="scrollToOrder()">Order Now</button>
+</section>
+
+<section id="about">
+  <h3>About Us</h3>
+  <p>We are a professional team delivering modern solutions.</p>
+</section>
+
+<section id="services">
+  <h3>Services</h3>
+  <div class="grid">
+    <div class="card">Web Development</div>
+    <div class="card">Mobile App</div>
+    <div class="card">IT Support</div>
+  </div>
+</section>
+
+<section id="order">
+  <h3>Order</h3>
+  <form onsubmit="submitOrder(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="text" placeholder="Phone" required>
+    <button type="submit">Submit Order</button>
+  </form>
+</section>
+
+<section id="news">
+  <h3>News</h3>
+  <p>New services launching soon.</p>
+</section>
+
+<section id="events">
+  <h3>Events</h3>
+  <p>Join our upcoming workshop.</p>
+</section>
+
+<footer>
+  © 2026 MyWebsite
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
